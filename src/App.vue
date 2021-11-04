@@ -1,11 +1,16 @@
 <template>
   <div>
-    <router-view />
+    <Navigation />
+    <router-view />    
   </div>
 </template>
 
 <script>
+import Navigation from "./components/Navigation.vue";
 export default {
+  components: {
+    Navigation,
+    },
   setup() {
     // Create data / vars
     // Check to see if user is already logged in

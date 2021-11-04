@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "view-workout",
+  name: "view-cigar",
   setup() {
     // Create data / vars
     // Get current Id of route
