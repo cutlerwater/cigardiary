@@ -24,6 +24,17 @@
       </div>
 
       <div class="flex flex-col mb-2">
+        <label for="phone" class="mb-1 text-sm text-at-light-green">Phone</label>
+        <input
+          type="text"
+          required
+          class="p-2 text-gray-500 focus:outline-none"
+          id="phone"
+          v-model="phone"
+        />
+      </div>
+
+      <div class="flex flex-col mb-2">
         <label for="password" class="mb-1 text-sm text-at-light-green">Password</label>
         <input
           type="password"
@@ -75,6 +86,7 @@ export default {
     const router = useRouter();
     const email = ref(null);
     const password = ref(null);
+    const phone = ref(null);
     const confirmPassword = ref(null);
     const errorMsg = ref(null);
     // Register function
@@ -100,7 +112,7 @@ export default {
         errorMsg.value = null;
       }, 5000);
     };
-    return { email, password, confirmPassword, errorMsg, register };
+    return { email, phone, password, confirmPassword, errorMsg, register };
   },
 };
 </script>
