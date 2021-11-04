@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-md mx-auto px-4 py-10">
+  <div class="max-w-screen-md mx-auto px-4 py-14">
     <!-- Status Message -->
     <div
       v-if="statusMsg || errorMsg"
@@ -12,8 +12,8 @@
       </div>
 
       <!-- Create -->
-      <div class="p-8 flex items-start bg-natural rounded-md shadow-lg">
-        <form class="flex flex-col gap-y-5 w-full">
+      <div class="p-14 flex items-start bg-natural rounded-md shadow-lg">
+        <form class="flex flex-col gap-y-10 w-full">
 
           <h1 class="text-2xl text-at-red">Record cigar</h1>
           <!-- Cigar name -->
@@ -46,7 +46,7 @@
             :key="index"
           >
             <div class="flex flex-col flex-1">
-              <label for="strength" class="mb-1 text-sm text-at-light-green">Strength</label>
+              <label for="strength" class="mb-2 text-lg text-maduro">Strength</label>
               <input
                 required
                 type="text"
@@ -55,7 +55,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="size" class="mb-1 text-sm text-at-light-green">Size </label>
+              <label for="size" class="mb-1 text-sm text-maduro">Size </label>
               <input
                 required
                 type="text"
@@ -64,7 +64,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="cigar_shape" class="mb-1 text-sm text-at-light-green"
+              <label for="cigar_shape" class="mb-1 text-sm text-maduro"
                 >Shape
               </label>
               <input
@@ -75,8 +75,8 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="ring_gauge" class="mb-1 text-sm text-at-light-green"
-                >Ring Gauge
+              <label for="ring_gauge" class="mb-1 text-sm text-maduro"
+                >Gauge
               </label>
               <input
                 required
@@ -86,8 +86,8 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="country" class="mb-1 text-sm text-at-light-green"
-                >Country of Origin
+              <label for="country" class="mb-1 text-sm text-maduro"
+                >Country
               </label>
               <input
                 required
@@ -97,7 +97,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="filler" class="mb-1 text-sm text-at-light-green"
+              <label for="filler" class="mb-1 text-sm text-maduro"
                 >Filler
               </label>
               <input
@@ -108,7 +108,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="wrapper" class="mb-1 text-sm text-at-red"
+              <label for="wrapper" class="mb-1 text-sm text-maduro"
                 >Wrapper
               </label>
               <input
@@ -119,7 +119,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="price" class="mb-1 text-sm text-at-red"
+              <label for="price" class="mb-1 text-sm text-maduro"
                 >Price
               </label>
               <input
@@ -130,7 +130,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="rating" class="mb-1 text-sm text-at-red"
+              <label for="rating" class="mb-1 text-sm text-maduro"
                 >Rating
               </label>
               <input
@@ -141,7 +141,7 @@
               />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="Review" class="mb-1 text-sm text-at-red"
+              <label for="Review" class="mb-1 text-sm text-maduro"
                 >Review
               </label>
               <input
